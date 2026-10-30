@@ -26,7 +26,7 @@ app.get('/heavy', (req, res) => {
 
 // Kubernetesが「このアプリは元気か」を確認するためのURL
 app.get('/healthz', (req, res) => {
-  res.status(500).send('NG');
+  res.send('OK');
 });
 
 app.listen(PORT, () => {
