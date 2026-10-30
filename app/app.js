@@ -2,7 +2,7 @@ const express = require('express');
 const os = require('os');
 const app = express();
 const PORT = 3000;
-const VERSION = 'v2';
+const VERSION = 'v1';
 
 // トップページ：バージョンと、応答したPod名を表示
 app.get('/', (req, res) => {
